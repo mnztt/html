@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        
+        }
+        header{
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 15px;
+        }
+
+        h1{
+            box-shadow: 3px 3px 14px 3px rgba(0, 0, 0, 0.466)
+        }
+
+        nav{
+            background-color: rgb(105, 105, 105);
+            padding: 3px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
+            
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: bold;
+            margin-right: 60px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 40px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.479);
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(167, 162, 162);
+            margin: 20px 200px 10px 200px;
+            text-align: center;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projetos</a>
+            <a href="#">Integrantes</a>
+            <a href="#">Quem somos?</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>noticias bolivia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, esse omnis magnam illo deleniti dolor sed nesciunt animi optio molestias itaque voluptatibus quam laudantium pariatur odit? Error officiis possimus laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, et nihil voluptatibus voluptas quaerat similique quibusdam iure amet, vitae atque beatae, exercitationem quisquam eligendi maxime placeat accusamus porro commodi quam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit cum dolore amet necessitatibus aspernatur non. Doloribus, maiores enim vero quaerat illo debitis, delectus obcaecati possimus adipisci, ex omnis fuga.</p>
+                <aside>
+                    <p>escrito por mm</p>
+                </aside>
+            </article>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ullam. Hic nemo id excepturi porro adipisci est quidem, beatae ex nobis temporibus molestiae! Laudantium ex expedita blanditiis delectus. Quis, sequi!</p>
+                <aside>
+                    <p>escrito por mim</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por mim</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

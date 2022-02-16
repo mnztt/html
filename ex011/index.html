@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>midia dinamica</h1>
+    <p>tenta abrir em varios dispositivos diferentes aumente e diminua o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--50px a mais para tirar barra de rolagem horizontal-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzir audios</h1>
+    <h2>forma 1</h2>
+    <audio src="midia/beat.mp3" controls autoplay></audio>
+
+    <h2>forma 2</h2>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/beat.mp3" type="audio/mpeg">
+        <source src="midia/beat.ogg" type="audio/ogg">
+        <source src="midia/beat.wav" type="audio/wav"> <!--arquivos pesados (nao recomendados)-->
+        <p>infelizmente seu navegador nao consegue reproduzir</p>
+    </audio>
+<!--mp3 é do tipo mpeg-->
+</body>
+</html>
